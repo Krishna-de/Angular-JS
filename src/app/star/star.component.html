@@ -1,0 +1,12 @@
+<!-- <span class="glyphicon"
+ [class.glyphicon-star]="isBold"
+ [class.glyphicon-star-empty]="!isBold"
+ (click)="onClick()"
+ ></span> we can also use the follwoing approch-->
+ <span class="glyphicon"
+  [ngClass]= "{
+   'glyphicon-star': isBold,
+   'glyphicon-star-empty': !isBold
+  }"
+ (click)="onClick()"
+ ></span>
